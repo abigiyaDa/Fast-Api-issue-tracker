@@ -65,7 +65,7 @@ pip install -r requirements.txt
 Start the server with:
 
 ```bash
-uvicorn main:app --reload
+fastapi dev main.py
 ```
 
 App will be available at:
@@ -84,11 +84,6 @@ Interactive Swagger UI:
 http://127.0.0.1:8000/docs
 ```
 
-Alternative ReDoc:
-
-```
-http://127.0.0.1:8000/redoc
-```
 
 ---
 
@@ -186,8 +181,6 @@ app/middleware/timer.py
 
 * Currently uses file-based storage (not suitable for production)
 * No authentication or user management
-* UUID validation can be improved by using `UUID` type instead of `str`
-* Concurrency issues may occur with multiple writes
 
 ---
 
@@ -195,9 +188,7 @@ app/middleware/timer.py
 
 * Switch to a real database (SQLite / PostgreSQL)
 * Add authentication (JWT)
-* Add pagination & filtering
 * Add logging & error tracking
-* Dockerize the application
 
 ---
 
