@@ -42,7 +42,7 @@ Data is stored locally in a JSON file for simplicity.
 
 ```bash
 git clone <your-repo-url>
-cd FastApi-issue-tracker
+cd Fast-Api-issue-tracker
 ```
 
 2. Create and activate a virtual environment:
